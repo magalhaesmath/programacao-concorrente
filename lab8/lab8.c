@@ -1,7 +1,7 @@
 /*
 Autor: Matheus Magalhães Nascimento Silva.
 Laboratório 8 — Produtor/Consumidor com lotes completos
-Compilar: gcc lab8.c -o lab8 -pthread
+Compilar: gcc lab8.c -o lab8 -lm
 */
 
 #include <stdio.h>
