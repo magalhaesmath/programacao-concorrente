@@ -1,0 +1,324 @@
+1. Caso mínimo (validação básica)
+./lab8 3 2 1
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 1
+[PRODUTOR] Inserindo 2 números (1 até 2)
+[PRODUTOR] Lote 1 finalizado — buffer contém 2 elementos
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 2
+[PRODUTOR] Inserindo 1 números (3 até 3)
+[PRODUTOR] Lote 2 finalizado — buffer contém 1 elementos
+
+[PRODUTOR] Aguardando buffer esvaziar completamente antes de inserir sentinelas...
+Thread 0: encontrou o primo 2 (total até agora: 1)
+Thread 0: encontrou o primo 3 (total até agora: 2)
+[PRODUTOR] Inserindo 1 sentinelas (0) para encerrar consumidores...
+[PRODUTOR] Inserção completa. Encerrando thread produtora.
+
+Thread 0 finalizou — total de primos encontrados: 2
+
+=== RESULTADO FINAL ===
+N = 3, M = 2, T = 1
+Total de primos encontrados: 2
+Thread vencedora: 0 com 2 primos
+
+
+2. Buffer exatamente igual a N
+./lab8 5 5 1
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 1
+[PRODUTOR] Inserindo 5 números (1 até 5)
+[PRODUTOR] Lote 1 finalizado — buffer contém 5 elementos
+
+[PRODUTOR] Aguardando buffer esvaziar completamente antes de inserir sentinelas...
+Thread 0: encontrou o primo 2 (total até agora: 1)
+Thread 0: encontrou o primo 3 (total até agora: 2)
+Thread 0: encontrou o primo 5 (total até agora: 3)
+[PRODUTOR] Inserindo 1 sentinelas (0) para encerrar consumidores...
+[PRODUTOR] Inserção completa. Encerrando thread produtora.
+
+Thread 0 finalizou — total de primos encontrados: 3
+
+=== RESULTADO FINAL ===
+N = 5, M = 5, T = 1
+Total de primos encontrados: 3
+Thread vencedora: 0 com 3 primos
+
+
+3. Múltiplos lotes, único consumidor
+./lab8 10 3 1
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 1
+[PRODUTOR] Inserindo 3 números (1 até 3)
+[PRODUTOR] Lote 1 finalizado — buffer contém 3 elementos
+Thread 0: encontrou o primo 2 (total até agora: 1)
+Thread 0: encontrou o primo 3 (total até agora: 2)
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 2
+[PRODUTOR] Inserindo 3 números (4 até 6)
+[PRODUTOR] Lote 2 finalizado — buffer contém 3 elementos
+Thread 0: encontrou o primo 5 (total até agora: 3)
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 3
+[PRODUTOR] Inserindo 3 números (7 até 9)
+[PRODUTOR] Lote 3 finalizado — buffer contém 3 elementos
+Thread 0: encontrou o primo 7 (total até agora: 4)
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 4
+[PRODUTOR] Inserindo 1 números (10 até 10)
+[PRODUTOR] Lote 4 finalizado — buffer contém 1 elementos
+
+[PRODUTOR] Aguardando buffer esvaziar completamente antes de inserir sentinelas...
+[PRODUTOR] Inserindo 1 sentinelas (0) para encerrar consumidores...
+[PRODUTOR] Inserção completa. Encerrando thread produtora.
+
+Thread 0 finalizou — total de primos encontrados: 4
+
+=== RESULTADO FINAL ===
+N = 10, M = 3, T = 1
+Total de primos encontrados: 4
+Thread vencedora: 0 com 4 primos
+
+
+4. Múltiplas consumidoras
+./lab8 20 5 4
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 1
+[PRODUTOR] Inserindo 5 números (1 até 5)
+[PRODUTOR] Lote 1 finalizado — buffer contém 5 elementos
+Thread 0: encontrou o primo 2 (total até agora: 1)
+Thread 0: encontrou o primo 3 (total até agora: 2)
+Thread 0: encontrou o primo 5 (total até agora: 3)
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 2
+[PRODUTOR] Inserindo 5 números (6 até 10)
+Thread 0: encontrou o primo 7 (total até agora: 4)
+[PRODUTOR] Lote 2 finalizado — buffer contém 0 elementos
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 3
+[PRODUTOR] Inserindo 5 números (11 até 15)
+Thread 2: encontrou o primo 11 (total até agora: 1)
+[PRODUTOR] Lote 3 finalizado — buffer contém 2 elementos
+Thread 0: encontrou o primo 13 (total até agora: 5)
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 4
+[PRODUTOR] Inserindo 5 números (16 até 20)
+Thread 2: encontrou o primo 17 (total até agora: 2)
+Thread 3: encontrou o primo 19 (total até agora: 1)
+[PRODUTOR] Lote 4 finalizado — buffer contém 0 elementos
+
+[PRODUTOR] Aguardando buffer esvaziar completamente antes de inserir sentinelas...
+[PRODUTOR] Inserindo 4 sentinelas (0) para encerrar consumidores...
+Thread 1 finalizou — total de primos encontrados: 0
+Thread 3 finalizou — total de primos encontrados: 1
+[PRODUTOR] Inserção completa. Encerrando thread produtora.
+
+Thread 2 finalizou — total de primos encontrados: 2
+Thread 0 finalizou — total de primos encontrados: 5
+
+=== RESULTADO FINAL ===
+N = 20, M = 5, T = 4
+Total de primos encontrados: 8
+Thread vencedora: 0 com 5 primos
+
+
+5. Buffer pequeno e muitas consumidoras
+./lab8 15 2 5
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 1
+[PRODUTOR] Inserindo 2 números (1 até 2)
+[PRODUTOR] Lote 1 finalizado — buffer contém 2 elementos
+Thread 1: encontrou o primo 2 (total até agora: 1)
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 2
+[PRODUTOR] Inserindo 2 números (3 até 4)
+[PRODUTOR] Lote 2 finalizado — buffer contém 2 elementos
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 3
+[PRODUTOR] Inserindo 2 números (5 até 6)
+Thread 0: encontrou o primo 3 (total até agora: 1)
+[PRODUTOR] Lote 3 finalizado — buffer contém 0 elementos
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 4
+[PRODUTOR] Inserindo 2 números (7 até 8)
+Thread 2: encontrou o primo 5 (total até agora: 1)
+[PRODUTOR] Lote 4 finalizado — buffer contém 0 elementos
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 5
+[PRODUTOR] Inserindo 2 números (9 até 10)
+Thread 4: encontrou o primo 7 (total até agora: 1)
+[PRODUTOR] Lote 5 finalizado — buffer contém 0 elementos
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 6
+[PRODUTOR] Inserindo 2 números (11 até 12)
+Thread 1: encontrou o primo 11 (total até agora: 2)
+[PRODUTOR] Lote 6 finalizado — buffer contém 0 elementos
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 7
+[PRODUTOR] Inserindo 2 números (13 até 14)
+[PRODUTOR] Lote 7 finalizado — buffer contém 2 elementos
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 8
+[PRODUTOR] Inserindo 1 números (15 até 15)
+[PRODUTOR] Lote 8 finalizado — buffer contém 1 elementos
+
+[PRODUTOR] Aguardando buffer esvaziar completamente antes de inserir sentinelas...
+[PRODUTOR] Inserindo 5 sentinelas (0) para encerrar consumidores...
+Thread 3: encontrou o primo 13 (total até agora: 1)
+Thread 1 finalizou — total de primos encontrados: 2
+Thread 3 finalizou — total de primos encontrados: 1
+Thread 4 finalizou — total de primos encontrados: 1
+[PRODUTOR] Inserção completa. Encerrando thread produtora.
+
+Thread 0 finalizou — total de primos encontrados: 1
+Thread 2 finalizou — total de primos encontrados: 1
+
+=== RESULTADO FINAL ===
+N = 15, M = 2, T = 5
+Total de primos encontrados: 6
+Thread vencedora: 1 com 2 primos
+
+
+6. Buffer grande e poucos consumidores
+./lab8 50 20 2
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 1
+[PRODUTOR] Inserindo 20 números (1 até 20)
+[PRODUTOR] Lote 1 finalizado — buffer contém 20 elementos
+Thread 1: encontrou o primo 3 (total até agora: 1)
+Thread 1: encontrou o primo 5 (total até agora: 2)
+Thread 1: encontrou o primo 7 (total até agora: 3)
+Thread 1: encontrou o primo 11 (total até agora: 4)
+Thread 1: encontrou o primo 13 (total até agora: 5)
+Thread 1: encontrou o primo 17 (total até agora: 6)
+Thread 1: encontrou o primo 19 (total até agora: 7)
+Thread 0: encontrou o primo 2 (total até agora: 1)
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 2
+[PRODUTOR] Inserindo 20 números (21 até 40)
+Thread 1: encontrou o primo 23 (total até agora: 8)
+Thread 1: encontrou o primo 31 (total até agora: 9)
+Thread 1: encontrou o primo 37 (total até agora: 10)
+[PRODUTOR] Lote 2 finalizado — buffer contém 0 elementos
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 3
+[PRODUTOR] Inserindo 10 números (41 até 50)
+[PRODUTOR] Lote 3 finalizado — buffer contém 10 elementos
+
+[PRODUTOR] Aguardando buffer esvaziar completamente antes de inserir sentinelas...
+Thread 1: encontrou o primo 41 (total até agora: 11)
+Thread 1: encontrou o primo 43 (total até agora: 12)
+Thread 1: encontrou o primo 47 (total até agora: 13)
+Thread 0: encontrou o primo 29 (total até agora: 2)
+[PRODUTOR] Inserindo 2 sentinelas (0) para encerrar consumidores...
+[PRODUTOR] Inserção completa. Encerrando thread produtora.
+
+Thread 1 finalizou — total de primos encontrados: 13
+Thread 0 finalizou — total de primos encontrados: 2
+
+=== RESULTADO FINAL ===
+N = 50, M = 20, T = 2
+Total de primos encontrados: 15
+Thread vencedora: 1 com 13 primos
+
+
+7. Caso limite: 1 número apenas
+./lab8 1 5 2
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 1
+[PRODUTOR] Inserindo 1 números (1 até 1)
+[PRODUTOR] Lote 1 finalizado — buffer contém 1 elementos
+
+[PRODUTOR] Aguardando buffer esvaziar completamente antes de inserir sentinelas...
+[PRODUTOR] Inserindo 2 sentinelas (0) para encerrar consumidores...
+[PRODUTOR] Inserção completa. Encerrando thread produtora.
+
+Thread 0 finalizou — total de primos encontrados: 0
+Thread 1 finalizou — total de primos encontrados: 0
+
+=== RESULTADO FINAL ===
+N = 1, M = 5, T = 2
+Total de primos encontrados: 0
+Thread vencedora: 0 com 0 primos
+
+
+8. Caso limite: buffer de tamanho 1
+./lab8 10 1 3
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 1
+[PRODUTOR] Inserindo 1 números (1 até 1)
+[PRODUTOR] Lote 1 finalizado — buffer contém 1 elementos
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 2
+[PRODUTOR] Inserindo 1 números (2 até 2)
+[PRODUTOR] Lote 2 finalizado — buffer contém 1 elementos
+Thread 0: encontrou o primo 2 (total até agora: 1)
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 3
+[PRODUTOR] Inserindo 1 números (3 até 3)
+[PRODUTOR] Lote 3 finalizado — buffer contém 1 elementos
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 4
+[PRODUTOR] Inserindo 1 números (4 até 4)
+Thread 1: encontrou o primo 3 (total até agora: 1)
+[PRODUTOR] Lote 4 finalizado — buffer contém 0 elementos
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 5
+[PRODUTOR] Inserindo 1 números (5 até 5)
+[PRODUTOR] Lote 5 finalizado — buffer contém 1 elementos
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 6
+[PRODUTOR] Inserindo 1 números (6 até 6)
+Thread 0: encontrou o primo 5 (total até agora: 2)
+[PRODUTOR] Lote 6 finalizado — buffer contém 0 elementos
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 7
+[PRODUTOR] Inserindo 1 números (7 até 7)
+[PRODUTOR] Lote 7 finalizado — buffer contém 1 elementos
+Thread 1: encontrou o primo 7 (total até agora: 2)
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 8
+[PRODUTOR] Inserindo 1 números (8 até 8)
+[PRODUTOR] Lote 8 finalizado — buffer contém 1 elementos
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 9
+[PRODUTOR] Inserindo 1 números (9 até 9)
+[PRODUTOR] Lote 9 finalizado — buffer contém 1 elementos
+
+[PRODUTOR] Buffer vazio detectado — iniciando lote 10
+[PRODUTOR] Inserindo 1 números (10 até 10)
+[PRODUTOR] Lote 10 finalizado — buffer contém 1 elementos
+
+[PRODUTOR] Aguardando buffer esvaziar completamente antes de inserir sentinelas...
+[PRODUTOR] Inserindo 3 sentinelas (0) para encerrar consumidores...
+Thread 2 finalizou — total de primos encontrados: 0
+Thread 1 finalizou — total de primos encontrados: 2
+[PRODUTOR] Inserção completa. Encerrando thread produtora.
+
+Thread 0 finalizou — total de primos encontrados: 2
+
+=== RESULTADO FINAL ===
+N = 10, M = 1, T = 3
+Total de primos encontrados: 4
+Thread vencedora: 0 com 2 primos
+
+
+9. Caso grande 
+./lab8 1000000 1000 10
+
+COMO ESSE CASO TEVE UMA SAÍDA GIGANTESCA, PEGUEI APENAS O ÚLTIMO LOG
+
+=== RESULTADO FINAL ===
+N = 1000000, M = 1000, T = 10
+Total de primos encontrados: 78498
+Thread vencedora: 3 com 7985 primos
+
+
+10. Caso grande (com o dobro de threads em relação ao teste anterior - 20 threads):
+./lab8 1000000 1000 20
+
+
+=== RESULTADO FINAL ===
+N = 1000000, M = 1000, T = 20
+Total de primos encontrados: 78498
+Thread vencedora: 11 com 4026 primos
