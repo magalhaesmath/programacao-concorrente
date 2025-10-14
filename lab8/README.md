@@ -104,7 +104,7 @@ O programa é considerado **correto** se todas as condições abaixo forem satis
 
 ### ✅ (3) Validação Matemática
 - O **total de primos encontrados** corresponde ao valor esperado matematicamente
-  (pode ser comparado com uma lista ou função auxiliar de checagem de primos).
+  (em testes pequenos, foi checado manualmente; em testes maiores, foi checado com o auxílio de LLM's).
 
 ### ✅ (4) Integridade do Buffer
 - O **buffer nunca excede** o limite máximo de **M elementos**.
