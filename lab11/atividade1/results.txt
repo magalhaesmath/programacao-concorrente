@@ -1,0 +1,111 @@
+1 thread | n = 25
+[Thread-0] O numero 1 NAO EH primo.
+[Thread-0] O numero 2 EH primo.
+[Thread-0] O numero 3 EH primo.
+[Thread-0] O numero 4 NAO EH primo.
+[Thread-0] O numero 5 EH primo.
+[Thread-0] O numero 6 NAO EH primo.
+[Thread-0] O numero 7 EH primo.
+[Thread-0] O numero 8 NAO EH primo.
+[Thread-0] O numero 9 NAO EH primo.
+[Thread-0] O numero 10 NAO EH primo.
+[Thread-0] O numero 11 EH primo.
+[Thread-0] O numero 12 NAO EH primo.
+[Thread-0] O numero 13 EH primo.
+[Thread-0] O numero 14 NAO EH primo.
+[Thread-0] O numero 15 NAO EH primo.
+[Thread-0] O numero 16 NAO EH primo.
+[Thread-0] O numero 17 EH primo.
+[Thread-0] O numero 18 NAO EH primo.
+[Thread-0] O numero 19 EH primo.
+[Thread-0] O numero 20 NAO EH primo.
+[Thread-0] O numero 21 NAO EH primo.
+[Thread-0] O numero 22 NAO EH primo.
+[Thread-0] O numero 23 EH primo.
+[Thread-0] O numero 24 NAO EH primo.
+[Thread-0] O numero 25 NAO EH primo.
+Terminou
+
+2 threads | n = 25:
+[Thread-0] O numero 1 NAO EH primo.
+[Thread-1] O numero 2 EH primo.
+[Thread-1] O numero 4 NAO EH primo.
+[Thread-1] O numero 5 EH primo.
+[Thread-1] O numero 6 NAO EH primo.
+[Thread-0] O numero 3 EH primo.
+[Thread-0] O numero 8 NAO EH primo.
+[Thread-0] O numero 9 NAO EH primo.
+[Thread-1] O numero 7 EH primo.
+[Thread-1] O numero 11 EH primo.
+[Thread-1] O numero 12 NAO EH primo.
+[Thread-1] O numero 13 EH primo.
+[Thread-1] O numero 14 NAO EH primo.
+[Thread-1] O numero 15 NAO EH primo.
+[Thread-1] O numero 16 NAO EH primo.
+[Thread-1] O numero 17 EH primo.
+[Thread-0] O numero 10 NAO EH primo.
+[Thread-1] O numero 18 NAO EH primo.
+[Thread-1] O numero 20 NAO EH primo.
+[Thread-1] O numero 21 NAO EH primo.
+[Thread-1] O numero 22 NAO EH primo.
+[Thread-1] O numero 23 EH primo.
+[Thread-1] O numero 24 NAO EH primo.
+[Thread-1] O numero 25 NAO EH primo.
+[Thread-0] O numero 19 EH primo.
+Terminou
+
+4 threads | n = 25:
+[Thread-3] O numero 2 EH primo.
+[Thread-3] O numero 5 EH primo.
+[Thread-1] O numero 4 NAO EH primo.
+[Thread-1] O numero 7 EH primo.
+[Thread-1] O numero 8 NAO EH primo.
+[Thread-1] O numero 9 NAO EH primo.
+[Thread-1] O numero 10 NAO EH primo.
+[Thread-3] O numero 6 NAO EH primo.
+[Thread-3] O numero 12 NAO EH primo.
+[Thread-3] O numero 13 EH primo.
+[Thread-3] O numero 14 NAO EH primo.
+[Thread-3] O numero 15 NAO EH primo.
+[Thread-3] O numero 16 NAO EH primo.
+[Thread-3] O numero 17 EH primo.
+[Thread-3] O numero 18 NAO EH primo.
+[Thread-3] O numero 19 EH primo.
+[Thread-3] O numero 20 NAO EH primo.
+[Thread-3] O numero 21 NAO EH primo.
+[Thread-0] O numero 1 NAO EH primo.
+[Thread-0] O numero 23 EH primo.
+[Thread-0] O numero 24 NAO EH primo.
+[Thread-0] O numero 25 NAO EH primo.
+[Thread-2] O numero 3 EH primo.
+[Thread-1] O numero 11 EH primo.
+[Thread-3] O numero 22 NAO EH primo.
+Terminou
+
+8 threads | n = 25:
+[Thread-4] O numero 5 EH primo.
+[Thread-0] O numero 1 NAO EH primo.
+[Thread-0] O numero 10 NAO EH primo.
+[Thread-1] O numero 8 NAO EH primo.
+[Thread-4] O numero 9 NAO EH primo.
+[Thread-4] O numero 13 EH primo.
+[Thread-4] O numero 14 NAO EH primo.
+[Thread-4] O numero 15 NAO EH primo.
+[Thread-5] O numero 4 NAO EH primo.
+[Thread-5] O numero 17 EH primo.
+[Thread-5] O numero 18 NAO EH primo.
+[Thread-5] O numero 19 EH primo.
+[Thread-5] O numero 20 NAO EH primo.
+[Thread-5] O numero 21 NAO EH primo.
+[Thread-5] O numero 22 NAO EH primo.
+[Thread-5] O numero 23 EH primo.
+[Thread-6] O numero 3 EH primo.
+[Thread-3] O numero 6 NAO EH primo.
+[Thread-2] O numero 7 EH primo.
+[Thread-7] O numero 2 EH primo.
+[Thread-0] O numero 11 EH primo.
+[Thread-1] O numero 12 NAO EH primo.
+[Thread-4] O numero 16 NAO EH primo.
+[Thread-5] O numero 24 NAO EH primo.
+[Thread-6] O numero 25 NAO EH primo.
+Terminou

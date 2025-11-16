@@ -1,0 +1,107 @@
+--- Início da Bateria de Testes ---
+--- Teste com N=100000 e Threads=1 ---
+Usando 1 threads.
+Submetendo tarefas para verificar primos de 1 a 100000...
+100000 tarefas foram submetidas.
+Aguardando e somando resultados...
+Total de numeros primos encontrados: 9592
+
+--- Teste com N=100000 e Threads=2 ---
+Usando 2 threads.
+Submetendo tarefas para verificar primos de 1 a 100000...
+100000 tarefas foram submetidas.
+Aguardando e somando resultados...
+Total de numeros primos encontrados: 9592
+
+--- Teste com N=100000 e Threads=4 ---
+Usando 4 threads.
+Submetendo tarefas para verificar primos de 1 a 100000...
+100000 tarefas foram submetidas.
+Aguardando e somando resultados...
+Total de numeros primos encontrados: 9592
+
+--- Teste com N=100000 e Threads=8 ---
+Usando 8 threads.
+Submetendo tarefas para verificar primos de 1 a 100000...
+100000 tarefas foram submetidas.
+Aguardando e somando resultados...
+Total de numeros primos encontrados: 9592
+
+--- Teste com N=100000 e Threads=16 ---
+Usando 16 threads.
+Submetendo tarefas para verificar primos de 1 a 100000...
+100000 tarefas foram submetidas.
+Aguardando e somando resultados...
+Total de numeros primos encontrados: 9592
+
+--- Teste com N=1000000 e Threads=1 ---
+Usando 1 threads.
+Submetendo tarefas para verificar primos de 1 a 1000000...
+1000000 tarefas foram submetidas.
+Aguardando e somando resultados...
+Total de numeros primos encontrados: 78498
+
+--- Teste com N=1000000 e Threads=2 ---
+Usando 2 threads.
+Submetendo tarefas para verificar primos de 1 a 1000000...
+1000000 tarefas foram submetidas.
+Aguardando e somando resultados...
+Total de numeros primos encontrados: 78498
+
+--- Teste com N=1000000 e Threads=4 ---
+Usando 4 threads.
+Submetendo tarefas para verificar primos de 1 a 1000000...
+1000000 tarefas foram submetidas.
+Aguardando e somando resultados...
+Total de numeros primos encontrados: 78498
+
+--- Teste com N=1000000 e Threads=8 ---
+Usando 8 threads.
+Submetendo tarefas para verificar primos de 1 a 1000000...
+1000000 tarefas foram submetidas.
+Aguardando e somando resultados...
+Total de numeros primos encontrados: 78498
+
+--- Teste com N=1000000 e Threads=16 ---
+Usando 16 threads.
+Submetendo tarefas para verificar primos de 1 a 1000000...
+1000000 tarefas foram submetidas.
+Aguardando e somando resultados...
+Total de numeros primos encontrados: 78498
+
+--- Teste com N=10000000 e Threads=1 ---
+Usando 1 threads.
+Submetendo tarefas para verificar primos de 1 a 10000000...
+10000000 tarefas foram submetidas.
+Aguardando e somando resultados...
+Total de numeros primos encontrados: 664579
+
+--- Teste com N=10000000 e Threads=2 ---
+Usando 2 threads.
+Submetendo tarefas para verificar primos de 1 a 10000000...
+10000000 tarefas foram submetidas.
+Aguardando e somando resultados...
+Total de numeros primos encontrados: 664579
+
+--- Teste com N=10000000 e Threads=4 ---
+Usando 4 threads.
+Submetendo tarefas para verificar primos de 1 a 10000000...
+10000000 tarefas foram submetidas.
+Aguardando e somando resultados...
+Total de numeros primos encontrados: 664579
+
+--- Teste com N=10000000 e Threads=8 ---
+Usando 8 threads.
+Submetendo tarefas para verificar primos de 1 a 10000000...
+10000000 tarefas foram submetidas.
+Aguardando e somando resultados...
+Total de numeros primos encontrados: 664579
+
+--- Teste com N=10000000 e Threads=16 ---
+Usando 16 threads.
+Submetendo tarefas para verificar primos de 1 a 10000000...
+10000000 tarefas foram submetidas.
+Aguardando e somando resultados...
+Total de numeros primos encontrados: 664579
+
+--- Fim da Bateria de Testes ---
